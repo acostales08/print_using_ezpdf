@@ -35,7 +35,7 @@
                     <tbody>
                         <tr>
                             <td>
-                                <select class="inputField form-select" id=" studentCode1">
+                                <select class="inputField form-select" id="studentCode1">
                                     <option value="">Select StudentCode</option>
                                     <!-- Options will be added dynamically -->
                                 </select>
@@ -46,46 +46,46 @@
                         </tr>
                         <tr>
                             <td>
-                                <select class="inputField form-select" id=" studentCode2">
+                                <select class="inputField form-select" id="studentCode2">
                                     <option value="">Select StudentCode</option>
                                     <!-- Options will be added dynamically -->
                                 </select>
                             </td>
                             <td>
-                                <input type="text" class="inputField" id=" relation2">
+                                <input type="text" class="inputField" id="relation2">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <select class="inputField form-select" id=" studentCode3">
+                                <select class="inputField form-select" id="studentCode3">
                                     <option value="">Select StudentCode</option>
                                     <!-- Options will be added dynamically -->
                                 </select>
                             </td>
                             <td>
-                                <input type="text" class="inputField" id=" relation3">
+                                <input type="text" class="inputField" id="relation3">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <select class="inputField form-select" id=" studentCode4">
+                                <select class="inputField form-select" id="studentCode4">
                                     <option value="">Select StudentCode</option>
                                     <!-- Options will be added dynamically -->
                                 </select>
                             </td>
                             <td>
-                                <input type="text" class="inputField" id=" relation4">
+                                <input type="text" class="inputField" id="relation4">
                             </td>
                         </tr>
                         <tr>
                             <td>
-                                <select class="inputField form-select" id=" studentCode5">
+                                <select class="inputField form-select" id="studentCode5">
                                     <option value="">Select StudentCode</option>
                                     <!-- Options will be added dynamically -->
                                 </select>
                             </td>
                             <td>
-                                <input type="text" class="inputField" id=" relation5">
+                                <input type="text" class="inputField" id="relation5">
                             </td>
                         </tr>
                     </tbody>
@@ -116,7 +116,7 @@
                         <label for="txtregDateTo">Reg. Date To:</label>
                         <input type="text" name="txtregDateTo" class="inputField date" id="txtregDateTo">
                     </div>
-                    <div class="form-group">
+                    <div class="check-group">
                         <input class="form-check-input" type="checkbox" name="selectStatus" id="selectStatus">
                         <label class="form-check-label" for="selectStatus">Display active fetcher only</label>
                     </div>
