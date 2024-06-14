@@ -117,8 +117,8 @@ if ($reportType == "detailed") {
                 $xl1 = array();
                 $xl1[0] = 125;
                 $xl1[1] = $xl1[0] + 350;
-                $pdf->ezPlaceData($xl1[0], $xtop, 'Total Students: ', 11, 'left');
-                $pdf->ezPlaceData($xl1[1], $xtop, $totalStudentsForCurrentFetcher, 11, 'left');
+                $pdf->ezPlaceData($xl1[0], $xtop, 'Total Students: ', 10, 'left');
+                $pdf->ezPlaceData($xl1[1], $xtop, "<b>$totalStudentsForCurrentFetcher</b>", 10, 'left');
             }
 
             echo $fetcCode;
@@ -150,26 +150,26 @@ if ($reportType == "detailed") {
         $xl1 = array();
         $xl1[0] = 125;
         $xl1[1] = $xl1[0] + 350;
-        $pdf->ezPlaceData($xl1[0], $xtop, 'Total Students: ', 11, 'left');
-        $pdf->ezPlaceData($xl1[1], $xtop, $totalStudentsForCurrentFetcher, 11, 'left');
+        $pdf->ezPlaceData($xl1[0], $xtop, 'Total Students: ', 10, 'left');
+        $pdf->ezPlaceData($xl1[1], $xtop, "<b>$totalStudentsForCurrentFetcher</b>", 10, 'left');
     }
 
 
     $xtop -= 30;
-    $pdf->ezPlaceData($xleft1[0], $xtop, 'Total Fetchers: ' . $totalFetchers, 11, 'left');
+    $pdf->ezPlaceData($xleft1[0], $xtop, 'Total Count Fetcher: ' . "<b>$totalFetchers</b>", 10, 'left');
     $xtop -= 15;
-    $pdf->ezPlaceData($xleft1[0], $xtop, 'Total Students: ' . $totalStudents, 11, 'left');
+    $pdf->ezPlaceData($xleft1[0], $xtop, 'Total Count Student: ' . "<b>$totalStudents</b>", 10, 'left');
 } else {
-    $x1 = 75;
-    $x2 = 430;
+    $x1 = 125;
+    $x2 = 530;
     $pdf->line($x1, $xtop, $x2, $xtop);
     $xtop -= 15;
 
     $xleft1 = array();
-    $xleft1[0] = 75;
-    $xleft1[1] = $xleft1[0] + 85;
-    $xleft1[2] = $xleft1[1] + 105;
-    $xleft1[3] = $xleft1[2] + 155;
+    $xleft1[0] = 125;
+    $xleft1[1] = $xleft1[0] + 105;
+    $xleft1[2] = $xleft1[1] + 125;
+    $xleft1[3] = $xleft1[2] + 165;
     $xleft1[4] = $xleft1[3] + 50;
 
     $pdf->ezPlaceData($xleft1[0], $xtop, "Fetcher Code", $xfsize, 'left');
@@ -179,7 +179,6 @@ if ($reportType == "detailed") {
 
     $xtop -= 5;
 
-    // Second Line
     $pdf->line($x1, $xtop, $x2, $xtop);
 
     $pdf->restoreState();
@@ -220,8 +219,5 @@ if ($reportType == "detailed") {
         $pdf->ezPlaceData($xleft1[3], $xtop, $xrs["studentCount"], $xfsize, 'right');
     }
 }
-
-// First Line
-
 
 $pdf->ezStream();
